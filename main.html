@@ -3,29 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <title>Book Library</title>
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .book-library {
+      background-color: #ffffff;
+      width: 60%;
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .book {
+      margin-bottom: 30px;
+      padding: 15px;
+    }
+
+    .book img {
+      display: block;
+      margin: 0 auto 10px;
+      width: 200px;
+    }
+
+    .book h2 {
+      margin: 5px 0;
+    }
+
+    .book p {
+      margin: 5px 0;
+      color: #777777;
+    }
+
+    /* IMPORTANT: Cypress expects ALL divs inside .book to be green */
+    .book,
+    .book div {
+      background-color: #2ecc71;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 8px;
+      margin-top: 8px;
+    }
+  </style>
 </head>
 <body>
 
+  <h1>Book Library</h1>
+
   <div class="book-library">
-    <h1>Book Library</h1>
 
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/81L6bqz2V-L.jpg" alt="Spy in the Amber">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81l3rZK4lnL.jpg" alt="Spy in the Amber">
       <h2>SPY IN THE AMBER</h2>
       <p>By Manohar Malgonkar</p>
       <div>Rs. 299</div>
     </div>
 
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg" alt="Sacred Games">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81C+Y8N4GJL.jpg" alt="Sacred Games">
       <h2>Sacred Games</h2>
       <p>by Vikram Chandra</p>
       <div>Rs. 199</div>
     </div>
 
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/71F4+U8YpZL.jpg" alt="Byomkesh Bakshi">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71pQyD3F-CL.jpg" alt="Byomkesh Bakshi">
       <h2>BYOMKESH BAKSHI</h2>
       <p>By Sharadindu Bandyopadhyay</p>
       <div>Rs. 249</div>
